@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Dec 03, 2018 at 03:16 AM
+- Server version: 5.7.23
+- PHP Version: 7.2.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="task" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="races">
+                CREATE TABLE `races` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `factor` int(11) DEFAULT '0',
+                  `startDate` datetime NOT NULL,
+                  `endDate` datetime NOT NULL,
+                  `horses` json NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'task'
+    -->
+    <database name="task">
+        <!-- Table races -->
+    </database>
+</pma_xml_export>
